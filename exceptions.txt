@@ -1,0 +1,1 @@
+Exceptions in Python handle errors gracefully. They use try, except, else, and finally blocks. Example: try: x = 1/0 except ZeroDivisionError: print("Cannot divide by zero")

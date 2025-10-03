@@ -1,0 +1,1 @@
+Python uses open(), read(), write(), and close() functions for file handling. Files can be read or written in text or binary mode. Example: with open('myfile.txt', 'r') as file: data = file.read()

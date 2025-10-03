@@ -1,0 +1,1 @@
+Python code can be organized into modules and packages. A module is a file containing code; a package is a collection of modules in a directory with an _init_.py file. Modules and packages help organize large projects.

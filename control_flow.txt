@@ -1,0 +1,1 @@
+Python uses control flow statements like if, elif, else, for, and while to manage decision-making and repetition in code. Example: for loop is used to iterate over sequences

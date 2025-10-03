@@ -1,0 +1,1 @@
+Python is object-oriented. Classes define data and behavior. Objects are instances of classes. Use the class keyword to create classes, and _init_ method for building objects.

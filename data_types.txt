@@ -1,0 +1,1 @@
+Python has several built-in data types: int for integers, float for decimal numbers, str for text strings, list for ordered collections, tuple for immutable collections, and dict for storing key-value pairs.

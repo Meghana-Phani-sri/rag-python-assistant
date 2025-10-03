@@ -1,0 +1,1 @@
+List comprehensions provide a concise way to create lists in Python. Syntax: [expression for item in iterable]. Example: squares = [x*x for x in range(10)] creates a list of squares from 0 to 9.

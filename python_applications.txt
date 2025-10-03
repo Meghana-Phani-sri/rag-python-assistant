@@ -1,0 +1,1 @@
+Python is used in web development (Django, Flask), data science (NumPy, pandas), machine learning (scikit-learn, TensorFlow), scripting, automation, and education. It is popular because of its versatility and large libraries.
