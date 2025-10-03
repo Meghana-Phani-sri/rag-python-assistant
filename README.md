@@ -5,7 +5,7 @@ This project is a Retrieval-Augmented Generation (RAG) assistant built with Pyth
 ## Features
 
 - Local retrieval of information from provided documents
-- No OpenAI API needed
+- OpenAI API needed
 - Easy to extend by adding new .txt files to the docs folder
 
 ## How to Run
@@ -42,4 +42,5 @@ Ask a question (or type exit): What is list comprehension?List comprehensions pr
 ## Notes
 
 - If you see any deprecation warning about HuggingFaceEmbeddings on latest LangChain, it is safe to ignore.
+
 - Modify/add .txt files to expand your assistant’s knowledge.
