@@ -10,16 +10,38 @@ all_docs = []
 for file in files:
     loader = TextLoader(file)
     all_docs.extend(loader.load())
+blocked_keywords = [
+    "hack",
+    "malware",
+    "exploit",
+    "phishing"
+]
 
+if any(
+    word in user_query.lower()
+    for word in blocked_keywords
+):
+    print(
+        "Sorry, this request is not allowed."
+    )
+    exit()
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 documents = text_splitter.split_documents(all_docs)
 
 embeddings = HuggingFaceEmbeddings()
 vectorstore = FAISS.from_documents(documents, embeddings)
 retriever = vectorstore.as_retriever()
-
+memory = ConversationBufferMemory(
+    memory_key="chat_history",
+    return_messages=True
+)
+from langchain.memory import ConversationBufferMemory
 def run_query(query):
-    results = retriever.get_relevant_documents(query)
+    result = qa_chain({
+    "question": query
+})
+
+answer = result["answer"]
     print("
 Top answers from your docs:
 ")
